@@ -35,8 +35,6 @@ This project allows users to create, edit, delete, and interact with blog posts.
 ---
 
 
----
-
 ## 🛠️ Technologies Used
 
 - HTML5
