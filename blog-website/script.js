@@ -139,3 +139,19 @@ function logout() {
     localStorage.removeItem("loggedIn");
     window.location.href = "login.html";
 }
+window.addEventListener("scroll", reveal);
+
+function reveal() {
+    let posts = document.querySelectorAll(".post");
+
+    posts.forEach(post => {
+        let windowHeight = window.innerHeight;
+        let elementTop = post.getBoundingClientRect().top;
+        let elementVisible = 100;
+
+        if (elementTop < windowHeight - elementVisible) {
+            post.style.opacity = "1";
+            post.style.transform = "translateY(0)";
+        }
+    });
+}
