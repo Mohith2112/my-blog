@@ -5,11 +5,6 @@ This project allows users to create, edit, delete, and interact with blog posts.
 
 ---
 
-## 🚀 Live Website
-👉 https://Mohith2112.github.io/my-blog/
-
----
-
 ## ✨ Features
 
 - 📱 Responsive design (mobile + desktop)
