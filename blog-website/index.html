@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<script>
+if (localStorage.getItem("loggedIn") !== "true") {
+    window.location.href = "login.html";
+}
+</script>
+
+<header>
+    <h1>My Blog</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Blog</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <button id="dark-btn">Dark</button>
+        <button onclick="logout()">Logout</button>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Welcome to My Blog</h2>
+    <p>I write about programming, tech, and web development.</p>
+</section>
+
+<div class="search-box">
+    <input type="text" id="search" placeholder="Search blog posts...">
+</div>
+
+<div class="container">
+    <div id="admin-panel" class="add-post">
+        <h3>Add New Post</h3>
+        <input type="text" id="title" placeholder="Post Title">
+        <input type="file" id="imageFile">
+        <textarea id="content" placeholder="Post Content"></textarea>
+        <button onclick="createPost()">Add Post</button>
+    </div>
+
+    <main id="posts" class="blog-grid">
+        <!-- Posts will load here dynamically -->
+    </main>
+
+    <aside>
+        <h3>About Me</h3>
+        <p>I am a web developer and blogger.</p>
+
+        <h3>Categories</h3>
+        <ul>
+            <li>Web Development</li>
+            <li>Programming</li>
+            <li>Technology</li>
+        </ul>
+    </aside>
+</div>
+
+<footer>
+    <p>© 2026 My Blog</p>
+    <p>Follow me on social media</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

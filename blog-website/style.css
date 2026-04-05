@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body {
+    background: #f4f6f8;
+}
+
+/* Header */
+header {
+    background: #222;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(to right, #0077cc, #00c6ff);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Search */
+.search-box {
+    text-align: center;
+    margin: 20px;
+}
+
+.search-box input {
+    padding: 10px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+}
+
+/* Blog Grid */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    flex: 3;
+}
+
+/* Post Card */
+.post {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.post img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.post:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Sidebar */
+aside {
+    flex: 1;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Dark mode */
+.dark {
+    background: #121212;
+    color: white;
+}
+
+.dark .post,
+.dark aside {
+    background: #1e1e1e;
+}
+
+.dark header,
+.dark footer {
+    background: #1f1f1f;
+}
+.add-post {
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-post input,
+.add-post textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.add-post button {
+    padding: 10px;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.post button {
+    margin-top: 10px;
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.post button:first-of-type {
+    background: orange;
+    color: white;
+}
+
+.post button:last-of-type {
+    background: red;
+    color: white;
+}
